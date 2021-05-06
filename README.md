@@ -1,4 +1,4 @@
-# Lead Score Prediction Model V1
+# Lead Score Prediction Model v1.0
 
 ## Problem Statement
 We need a prediction model to predict the probability of our users to deposit. We can do so by having lead quality scoring based on the user bahaviours and characteristics
