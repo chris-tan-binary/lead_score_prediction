@@ -15,8 +15,7 @@ We will feature engineering into different streams based on the nature of the fe
 To start with, we will have:  
 i) Signup Feature - User details by the time they signup  
 ii) Clickstream - User activities on the website (eg: hits, sessions etc)  
-iii) Demo Trade Activity - User trading activities with demo accounts (BO and MT5)  
-v) Zendesk - User activities with help center  
+iii) Demo Trade Activity - User trading activities with demo accounts (BO and MT5)   
 vi) CLV - User deposit activities and amount (this will be the dependent variable)    
 
 [Refer Here for Feature Details](https://docs.google.com/spreadsheets/d/1skE7A1vsn01p9vKq5YdbWg10Y0B4CmOktqJSrNx23AQ/edit?ts=5ecf2dfd#gid=888794899])
@@ -33,3 +32,23 @@ We then select the top 20 features from the first model by feature importance, a
 ### Current best score
 __PRC AUC__:0.685  
 __ROC AUC__:0.857
+
+## Further Improvement
+
+### More Feature Engineering
+
+__Combine Demo Trade Features__  
+The features between BO and MT5 Demo trade are similar, and we will have huge amount of null values if we separate them, because most of the users dont do demo trade on the first day of signup, the issue becomes worse when we split them into BO and MT5
+
+__Include Livechat Data__  
+User activities with `help center` might be a good feature for predicting deposit posibilities  
+
+### Improve Features ETL Pipeline
+
+__Optimize Train Data Table ETL Process__  
+The table is currently updated with scheduled query by weekly (overwrite) which is around 80+ GB per run
+We can reduce it by using `append` option  
+
+__Optimize Subset Features ETL Process__  
+As we will have more summary and aggregated tables with data warehourse, some features can be obtained more easily  
+Eg: Most of the `Signup Features` can get from `User Profile Combined` Table
