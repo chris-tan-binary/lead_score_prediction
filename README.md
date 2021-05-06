@@ -19,8 +19,17 @@ iii) Demo Trade Activity - User trading activities with demo accounts (BO and MT
 v) Zendesk - User activities with help center  
 vi) CLV - User deposit activities and amount (this will be the dependent variable)    
 
-[Refer Here for Column Details](https://docs.google.com/spreadsheets/d/1skE7A1vsn01p9vKq5YdbWg10Y0B4CmOktqJSrNx23AQ/edit?ts=5ecf2dfd#gid=888794899])
+[Refer Here for Feature Details](https://docs.google.com/spreadsheets/d/1skE7A1vsn01p9vKq5YdbWg10Y0B4CmOktqJSrNx23AQ/edit?ts=5ecf2dfd#gid=888794899])
 
 We can do feature engineering on each part separately, and the final dataset will be just the concatenation of these parts.
 
 
+## Model Training
+In this version, we train data with users joined from `2021-01-01` to `2021-02-15`  
+The first model `lead_score_model` is the baseline model which includes every features with `boosted-tree classifier`
+
+We then select the top 20 features from the first model by feature importance, and do training with `DNN classifier`
+
+### Current best score
+__PRC AUC__:0.685  
+__ROC AUC__:0.857
