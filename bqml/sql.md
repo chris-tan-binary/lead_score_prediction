@@ -1,4 +1,4 @@
-BQML commands for model evaluation
+## BQML Commands for Model Evaluation
 
 __Feature_Importance__
 ```sql 
