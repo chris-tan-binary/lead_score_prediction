@@ -11,7 +11,7 @@ ii)Lead Score - We measure the score of our leads by predicting the probability 
 For simplicity, we can use `users activity` within 24 hours after signup, to predict if an user will deposit within 14 days after signup. So this will be a binary classification
 
 ## Features Engineering  
-We will feature engineering into different streams based on the nature of the features.
+We will feature engineering into different streams based on the nature of the features.  
 To start with, we will have:  
 i) Signup Feature - User details by the time they signup  
 ii) Clickstream - User activities on the website (eg: hits, sessions etc)  
