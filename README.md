@@ -52,3 +52,12 @@ We can reduce it by using `append` option
 __Optimize Subset Features ETL Process__  
 As we will have more summary and aggregated tables with data warehourse, some features can be obtained more easily  
 Eg: Most of the `Signup Features` can get from `User Profile Combined` Table
+
+### Model Interpretability
+One of the major drawbacks of machine learning is it's interpretability
+I found that there is a technique called `weight of evidence` which can help to explain the predicting power of isolated independent variable 
+towards the dependent variable(classification). This can be implemented on the next version.  
+[Reference Article](https://sundarstyles89.medium.com/weight-of-evidence-and-information-value-using-python-6f05072e83eb)
+
+## Related Visualization
+[Tableau Dashboard](https://10az.online.tableau.com/#/site/binary/views/LeadScoreDashboard/LeadScoreStory)
