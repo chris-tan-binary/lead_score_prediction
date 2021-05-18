@@ -62,5 +62,6 @@ towards the dependent variable(classification). This can be implemented on the n
 ## Related Visualization
 [Tableau Dashboard](https://10az.online.tableau.com/#/site/binary/views/LeadScoreDashboard/LeadScoreStory)
 
-### Lead Score 2.0 usage proposal (N days)
-https://htmtopdf.herokuapp.com/ipynbviewer/temp/33b6f15559ebeb0e9444b351086523be/lead_score_N_days.html?t=1621322306171
+## Lead Score 2.0 usage proposal (N days)
+[NoteBook](https://nbviewer.jupyter.org/github/chris-tan-binary/lead_score_prediction/blob/main/lead_score_N_days.ipynb)
+
